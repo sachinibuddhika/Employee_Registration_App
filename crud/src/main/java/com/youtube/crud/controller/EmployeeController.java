@@ -29,6 +29,8 @@ private EmployeeService employeeService;
      return employeeService.getEmployeeById(employeeId);
     }
 
+
+  @CrossOrigin(origins = "http://localhost:4200")
 @DeleteMapping("/delete/employee/{employeeId}")
     public void deleteEmployee(@PathVariable Integer employeeId){
 
